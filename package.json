@@ -8,5 +8,15 @@
     "url": "ssh://git@gitlab.olt.su:24/olt_site/olt-codestyle.git"
   },
   "private": true,
-  "license": ""
+  "license": "",
+  "scripts": {
+    "test": "yarn run test:eslint",
+    "test:eslint": "eslint --ignore-path .gitignore .; node eslint/tester.js"
+  },
+  "devDependencies": {
+    "eslint": "^4.11.0",
+    "eslint-config-prettier": "^2.7.0",
+    "eslint-plugin-prettier": "^2.3.1",
+    "prettier": "^1.8.2"
+  }
 }
