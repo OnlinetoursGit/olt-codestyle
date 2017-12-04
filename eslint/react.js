@@ -5,9 +5,19 @@ module.exports = {
   rules: {
     // React
     'react/boolean-prop-naming': 'warn',
+    'react/button-has-type': 'error',
     'react/default-props-match-prop-types': 'error',
-    'react/forbid-prop-types': ['warn', { forbid: ['array', 'object'] }],
+    'react/destructuring-assignment': ['warn', 'always'],
+    'react/forbid-prop-types': [
+      'warn',
+      {
+        forbid: ['array', 'object'],
+        checkContextTypes: true,
+        checkChildContextTypes: true,
+      },
+    ],
     'react/forbid-foreign-prop-types': 'error',
+    'react/no-access-state-in-setstate': 'error',
     'react/no-array-index-key': 'error',
     'react/no-children-prop': 'error',
     'react/no-danger': 'warn',
@@ -34,6 +44,7 @@ module.exports = {
       { ignorePureComponents: false },
     ],
     'react/prop-types': ['error', { skipUndeclared: false }],
+    'react/require-default-props': 'error',
     'react/react-in-jsx-scope': 'error',
     'react/require-render-return': 'error',
     'react/self-closing-comp': [
