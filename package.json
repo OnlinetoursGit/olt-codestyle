@@ -10,8 +10,7 @@
   "private": true,
   "license": "",
   "scripts": {
-    "test": "yarn run test:eslint",
-    "test:eslint": "eslint --ignore-path .gitignore .; node eslint/tester.js"
+    "test": "eslint --ignore-path .gitignore .; node eslint/tester.js"
   },
   "devDependencies": {
     "eslint": "^4.12.1",
