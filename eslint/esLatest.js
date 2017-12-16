@@ -3,9 +3,7 @@
 const { rules: es5 } = require('./es5');
 
 module.exports = {
-  rules: {
-    ...es5,
-
+  rules: Object.assign({}, es5, {
     // Possible Errors
     'no-await-in-loop': 'error',
     'no-template-curly-in-string': 'error',
@@ -21,17 +19,15 @@ module.exports = {
     // Variables
     'no-unused-vars': [
       es5['no-unused-vars'][0],
-      {
-        ...es5['no-unused-vars'][1],
+      Object.assign({}, es5['no-unused-vars'][1], {
         ignoreRestSiblings: true,
-      },
+      }),
     ],
     'no-use-before-define': [
       es5['no-use-before-define'][0],
-      {
-        ...es5['no-use-before-define'][1],
+      Object.assign({}, es5['no-use-before-define'][1], {
         classes: true,
-      },
+      }),
     ],
 
     // Stylistic Issues
@@ -42,11 +38,10 @@ module.exports = {
     ],
     'no-underscore-dangle': [
       es5['no-underscore-dangle'][0],
-      {
-        ...es5['no-underscore-dangle'][1],
+      Object.assign({}, es5['no-underscore-dangle'][1], {
         allowAfterThis: true,
         allowAfterSuper: true,
-      },
+      }),
     ],
 
     // ECMAScript 6
@@ -109,5 +104,5 @@ module.exports = {
     'prefer-template': 'warn',
     'require-yield': 'error',
     'symbol-description': 'warn',
-  },
+  }),
 };
