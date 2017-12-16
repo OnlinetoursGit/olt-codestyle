@@ -13,14 +13,14 @@
     "test": "eslint --ignore-path .gitignore .; node eslint/tester.js"
   },
   "devDependencies": {
-    "eslint": "^4.12.1",
+    "eslint": "^4.13.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.3.1",
     "eslint-plugin-react": "^7.5.1",
     "prettier": "^1.8.2"
   },
   "peerDependencies": {
-    "eslint": "^4.12.1",
+    "eslint": "^4.13.1",
     "eslint-plugin-react": "^7.5.1"
   },
   "engines": {
