@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "ssh://git@gitlab.olt.su:24/olt_site/olt-codestyle.git"
+    "url": "ssh://git@gitlab.olt.su:24/onlinetours/olt-codestyle.git"
   },
   "private": true,
   "license": "",
