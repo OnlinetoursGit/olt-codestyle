@@ -48,7 +48,6 @@ module.exports = {
     'arrow-body-style': ['warn', 'as-needed'],
     'constructor-super': 'error',
     'no-class-assign': 'error',
-    'no-confusing-arrow': 'error',
     'no-const-assign': 'error',
     'no-dupe-class-members': 'error',
     'no-duplicate-imports': ['warn', { includeExports: false }],
