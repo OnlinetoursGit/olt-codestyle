@@ -88,16 +88,6 @@ module.exports = {
         ignoreReadBeforeAssign: false,
       },
     ],
-    'prefer-destructuring': [
-      'warn',
-      {
-        VariableDeclarator: { object: true, array: true },
-        AssignmentExpression: { object: false, array: false },
-      },
-      {
-        enforceForRenamedProperties: true,
-      },
-    ],
     'prefer-numeric-literals': 'warn',
     'prefer-rest-params': 'warn',
     'prefer-spread': 'warn',
