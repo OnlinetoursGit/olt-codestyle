@@ -14,7 +14,7 @@ module.exports = {
     'no-dupe-keys': 'error',
     'no-duplicate-case': 'error',
     'no-empty-character-class': 'error',
-    'no-empty': ['error', { allowEmptyCatch: false }],
+    'no-empty': ['warn', { allowEmptyCatch: false }],
     'no-ex-assign': 'error',
     'no-extra-boolean-cast': 'error',
     'no-func-assign': 'error',
@@ -51,7 +51,7 @@ module.exports = {
     'block-scoped-var': 'warn',
     'consistent-return': ['warn', { treatUndefinedAsUnspecified: false }],
     curly: ['warn', 'multi', 'consistent'],
-    'default-case': 'error',
+    'default-case': 'warn',
     'dot-notation': ['warn', { allowKeywords: true }],
     eqeqeq: ['error', 'always', { null: 'never' }],
     'guard-for-in': 'warn',
@@ -77,10 +77,10 @@ module.exports = {
     ],
     'no-lone-blocks': 'error',
     'no-loop-func': 'warn',
-    'no-multi-str': 'error',
+    'no-multi-str': 'warn',
     'no-new-func': 'warn',
     'no-new-wrappers': 'error',
-    'no-new': 'error',
+    'no-new': 'warn',
     'no-octal-escape': 'error',
     'no-octal': 'error',
     'no-param-reassign': ['warn', { props: false }],
@@ -94,15 +94,15 @@ module.exports = {
     'no-throw-literal': 'error',
     'no-unmodified-loop-condition': 'warn',
     'no-unused-expressions': [
-      'error',
+      'warn',
       {
         allowShortCircuit: true,
         allowTernary: true,
       },
     ],
     'no-useless-call': 'error',
-    'no-useless-concat': 'error',
-    'no-useless-escape': 'error',
+    'no-useless-concat': 'warn',
+    'no-useless-escape': 'warn',
     'no-useless-return': 'error',
     'no-void': 'error',
     'no-with': 'error',
@@ -118,7 +118,7 @@ module.exports = {
     'no-delete-var': 'error',
     'no-shadow-restricted-names': 'error',
     'no-shadow': [
-      'error',
+      'warn', // Временно, потом error + вернуть builtinGlobals
       {
         builtinGlobals: true,
         hoist: 'all',
@@ -127,7 +127,7 @@ module.exports = {
     'no-undef-init': 'error',
     'no-undef': ['error', { typeof: true }],
     'no-unused-vars': [
-      'error',
+      'warn',
       {
         vars: 'all',
         args: 'after-used',
@@ -135,9 +135,9 @@ module.exports = {
       },
     ],
     'no-use-before-define': [
-      'error',
+      'warn',
       {
-        functions: true,
+        functions: false,
         variables: true,
       },
     ],
