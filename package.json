@@ -1,14 +1,13 @@
 {
   "name": "olt-codestyle",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "Centralized storage for frontend linters configs",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "ssh://git@gitlab.olt.su:24/onlinetours/olt-codestyle.git"
+    "url": "OnlinetoursGit/olt-codestyle"
   },
-  "private": true,
-  "license": "",
+  "license": "MIT",
   "scripts": {
     "test": "eslint --ignore-path .gitignore .; node eslint/tester.js"
   },
