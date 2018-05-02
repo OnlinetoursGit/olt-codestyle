@@ -16,7 +16,7 @@ module.exports = {
         checkChildContextTypes: true,
       },
     ],
-    'react/forbid-foreign-prop-types': 'error',
+    'react/forbid-foreign-prop-types': ['error', { allowInPropTypes: true }],
     'react/no-access-state-in-setstate': 'error',
     'react/no-array-index-key': 'warn',
     'react/no-children-prop': 'error',
@@ -33,6 +33,7 @@ module.exports = {
     'react/no-render-return-value': 'warn',
     'react/no-typos': 'error',
     'react/no-string-refs': 'warn',
+    'react/no-this-in-sfc': 'error',
     'react/no-unescaped-entities': 'warn',
     'react/no-unknown-property': 'error',
     'react/no-unused-prop-types': ['warn', { skipShapeProps: true }],
@@ -61,6 +62,7 @@ module.exports = {
           'static-methods',
           'getters',
           'setters',
+          'instance-variables',
           'lifecycle',
           '/^handle.+$/',
           'everything-else',
@@ -82,6 +84,7 @@ module.exports = {
 
     // JSX
     'react/jsx-boolean-value': ['warn', 'never'],
+    'react/jsx-child-element-spacing': 'warn',
     'react/jsx-filename-extension': ['warn', { extensions: ['.jsx'] }],
     'react/jsx-handler-names': 'warn',
     'react/jsx-key': 'error',

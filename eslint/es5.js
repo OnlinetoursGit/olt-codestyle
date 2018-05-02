@@ -3,7 +3,7 @@
 module.exports = {
   rules: {
     // Possible Errors
-    'getter-return': ['error', { allowImplicit: false }],
+    'getter-return': ['error', { allowImplicit: true }],
     'no-compare-neg-zero': 'error',
     'no-cond-assign': ['error', 'except-parens'],
     'no-console': 'error',
@@ -47,7 +47,7 @@ module.exports = {
         getWithoutSet: false,
       },
     ],
-    'array-callback-return': 'error',
+    'array-callback-return': ['error', { allowImplicit: true }],
     'block-scoped-var': 'warn',
     'consistent-return': ['warn', { treatUndefinedAsUnspecified: false }],
     curly: ['warn', 'multi', 'consistent'],
