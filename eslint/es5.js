@@ -144,7 +144,6 @@ module.exports = {
 
     // CommonJS
     'no-path-concat': 'error',
-    'no-process-env': 'warn',
 
     // Stylistic Issues
     camelcase: ['warn', { properties: 'always' }],
