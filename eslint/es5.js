@@ -143,15 +143,6 @@ module.exports = {
     ],
 
     // CommonJS
-    'global-require': 'warn',
-    'no-mixed-requires': [
-      'warn',
-      {
-        grouping: false,
-        allowCall: false,
-      },
-    ],
-    'no-new-require': 'error',
     'no-path-concat': 'error',
     'no-process-env': 'warn',
 
