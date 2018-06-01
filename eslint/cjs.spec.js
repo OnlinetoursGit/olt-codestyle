@@ -1,5 +1,7 @@
 'use strict';
 
+const rules = require('./cjs');
+
 module.exports = {
   parserOptions: {
     ecmaVersion: 5,
@@ -8,5 +10,5 @@ module.exports = {
   env: {
     commonjs: true,
   },
-  extends: ['./cjs.js'],
+  rules,
 };

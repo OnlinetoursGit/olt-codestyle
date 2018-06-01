@@ -1,5 +1,7 @@
 'use strict';
 
+const rules = require('./react');
+
 module.exports = {
   parserOptions: {
     ecmaVersion: 2017,
@@ -11,5 +13,5 @@ module.exports = {
     commonjs: true,
     es6: true,
   },
-  extends: ['./react.js'],
+  rules,
 };

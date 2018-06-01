@@ -1,5 +1,7 @@
 'use strict';
 
+const rules = require('./esLatest');
+
 module.exports = {
   parserOptions: {
     ecmaVersion: 2017,
@@ -10,5 +12,5 @@ module.exports = {
     commonjs: true,
     es6: true,
   },
-  extends: ['./esLatest.js'],
+  rules,
 };

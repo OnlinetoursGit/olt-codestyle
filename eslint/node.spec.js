@@ -1,5 +1,7 @@
 'use strict';
 
+const rules = require('./node');
+
 module.exports = {
   parserOptions: {
     ecmaVersion: 5,
@@ -8,5 +10,5 @@ module.exports = {
   env: {
     node: true,
   },
-  extends: ['./node.js'],
+  rules,
 };

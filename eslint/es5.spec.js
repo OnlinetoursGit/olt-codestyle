@@ -1,5 +1,7 @@
 'use strict';
 
+const rules = require('./es5');
+
 module.exports = {
   parserOptions: {
     ecmaVersion: 5,
@@ -9,5 +11,5 @@ module.exports = {
     browser: true,
     commonjs: true,
   },
-  extends: ['./es5.js'],
+  rules,
 };
