@@ -1,6 +1,6 @@
 'use strict';
 
-const { esLatest, node, cjs } = require('.');
+const { esLatest, node, cjs, prettier } = require('.');
 
 module.exports = {
   parserOptions: {
@@ -16,7 +16,5 @@ module.exports = {
   },
   root: true,
   plugins: ['prettier'],
-  rules: Object.assign({}, esLatest, node, cjs, {
-    'prettier/prettier': 'warn',
-  }),
+  rules: Object.assign({}, esLatest, node, cjs, prettier),
 };
